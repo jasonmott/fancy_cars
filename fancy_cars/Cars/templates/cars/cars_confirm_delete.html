@@ -1,0 +1,6 @@
+<!-- csrf_token is to verify same user posting the data-->
+<form method="POST">
+    {% csrf_token %}
+    <p>Are you sure you want to delete post {{object.make}} {{ object.model}}?</p>
+    <input type="submit" type="button" value="Confirm" />
+</form>

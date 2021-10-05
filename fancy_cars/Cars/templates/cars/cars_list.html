@@ -1,0 +1,8 @@
+<h1>World's Most Expensive Cars</h1>
+<h2>Below is a list of the World's most expensive cars</h2>
+
+<ul>
+{% for cars in object_list %}
+<li><a href="{{cars.get_absolute_url}}">{{cars.make}} {{cars.model}} - ${{cars.price}} Million Dollars</a></li>
+{% endfor %}
+</ul>

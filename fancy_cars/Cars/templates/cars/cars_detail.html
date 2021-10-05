@@ -1,0 +1,12 @@
+<h1>{{object.make}} {{object.model}}</h1>
+<p><img src="{{object.image.url}}" style="border: 1px solid #000; max-width:1024px; max-height:1024px;"/></p>
+<h2>Cost: ${{object.price}} Million</h2>
+<h3>Country of Origin: {{object.origin}}</h3>
+<h3>First Year of Production: {{object.year}}</h3>
+<h3>Horse Power: {{object.horsepower}}</h3>
+<h3>Color in Photo: {{object.color}}</h3>
+<h4>{{object.description}}</h4>
+<!-- <button onclick="location.href='http://127.0.0.1:8000'">Home</button> -->
+<a class="btn btn-primary" href="/"><button type="button">Home Page</button></a>
+<a href="{% url 'CarUpdate' pk=object.id %} "><button type="button">Update Post</button></a>
+<a href="{% url 'CarDelete' pk=object.id %} "><button type="button">Delete Post</button></a>

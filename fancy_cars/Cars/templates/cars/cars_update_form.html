@@ -1,0 +1,7 @@
+<!-- csrf_token is to verify same user posting the data-->
+<h1>Update the Car Information</h1>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>{{ form.as_p}}</p>
+    <input type="submit" value="save" />
+</form>

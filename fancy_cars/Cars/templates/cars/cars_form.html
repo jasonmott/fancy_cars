@@ -1,0 +1,6 @@
+<!-- csrf_token is to verify same user posting the data-->
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>{{ form.as_p}}</p>
+    <input type="submit" value="save" />
+</form>
